@@ -1,9 +1,10 @@
 import React from 'react'
 // Import containers here
+import VisibleCollection from '../containers/VisibleCollection'
 
 const App = () => (
   <div>
-    // Render containers here
+    <VisibleCollection />
   </div>
 )
 
