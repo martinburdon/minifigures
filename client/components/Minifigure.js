@@ -9,7 +9,7 @@ const Minifigure = ({ onClick, name, image, id, collected }) => (
     }}
   >
     <p>{name}</p>
-    <img src={image}/>
+    <img src={require('../assets/minifigures/master-wu.jpg')} />
   </mini-fig>
 );
 

@@ -2,9 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Minifigure from './Minifigure.js';
 
-const Collection = ({ minifigures, onMinifigClick }) => {
+const Collection = ({ minifigures, name, onMinifigClick }) => {
   return (
     <minifig-collection>
+      <h2>{name}</h2>
       {minifigures.map(minifig =>
         <Minifigure
           key={minifig.id}

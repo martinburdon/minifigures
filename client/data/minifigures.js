@@ -26,6 +26,13 @@ const minifigures = [
     image: '',
     collected: false,
     collectionId: 1
+  },
+  {
+    id: 4,
+    name: 'Master Wu',
+    image: '/client/assets/minifigures/master-wu.jpg',
+    collected: false,
+    collectionId: 17
   }
 ];
 

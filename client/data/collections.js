@@ -6,6 +6,10 @@ const collections = [
   {
     id: 1,
     name: 'Series 2'
+  },
+  {
+    id: 17,
+    name: 'Ninjago Characters'
   }
 ];
 
