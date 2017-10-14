@@ -1,5 +1,14 @@
 const minifigures = (state = [], action) => {
-  return state;
+  switch (action.type) {
+    case 'TOGGLE_COLLECTED':
+      return state.map(minifig =>
+        (minifig.id === action.id)
+          ? {...minifig, collected: !minifig.collected}
+          : minifig
+      )
+    default:
+      return state
+  }
 }
 
 export default minifigures;

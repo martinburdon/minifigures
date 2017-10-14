@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-// import { toggleTodo } from '../actions'
+import { toggleCollected } from '../actions'
 import Wrapper from '../components/Wrapper'
 
 const getVisibleMinifigures = ({ minifigures, collections }) => {
@@ -15,10 +15,15 @@ const mapStateToProps = (state, ownProps) => ({
     minifigures: state.minifigures,
     collections: state.collections
   })
-})
+});
+
+const mapDispatchToProps = {
+  onMinifigClick: toggleCollected
+};
 
 const VisibleCollection = connect(
-  mapStateToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(Wrapper)
 
 export default VisibleCollection

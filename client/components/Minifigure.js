@@ -2,7 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Minifigure = ({ onClick, name, image, id, collected }) => (
-  <mini-fig onClick={onClick}>
+  <mini-fig
+    onClick={onClick}
+    style={{
+      textDecoration: collected ? 'line-through' : 'none'
+    }}
+  >
     <p>{name}</p>
     <img src={image}/>
   </mini-fig>

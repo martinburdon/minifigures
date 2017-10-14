@@ -3,7 +3,7 @@ const minifigures = [
     id: 0,
     name: 'MF 1',
     image: '',
-    collected: false,
+    collected: true,
     collectionId: 0
   },
   {

@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import Minifigure from './Minifigure.js';
 
 const Collection = ({ minifigures, onMinifigClick }) => {
-  console.log(minifigures);
-
   return (
     <minifig-collection>
       {minifigures.map(minifig =>
