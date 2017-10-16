@@ -1,38 +1,60 @@
+// https://www.lego.com/en-gb/minifigures/my-collection
 const minifigures = [
   {
     id: 0,
-    name: 'MF 1',
-    image: '',
+    name: 'Caveman',
+    image: 'assets/minifigures/caveman.png',
     collected: true,
     collectionId: 0
   },
   {
     id: 1,
-    name: 'MF 2',
-    image: '',
+    name: 'Cheerleader',
+    image: 'assets/minifigures/cheerleader.png',
     collected: false,
     collectionId: 0
   },
   {
     id: 2,
-    name: 'MF 3',
-    image: '',
+    name: 'Clown',
+    image: 'assets/minifigures/clown.png',
     collected: false,
-    collectionId: 1
+    collectionId: 0
   },
   {
     id: 3,
-    name: 'MF 4',
-    image: '',
+    name: 'Cowboy',
+    image: 'assets/minifigures/cowboy.png',
+    collected: false,
+    collectionId: 0
+  },
+  {
+    id: 16,
+    name: 'Disco Dude',
+    image: 'assets/minifigures/disco-dude.png',
     collected: false,
     collectionId: 1
   },
   {
-    id: 4,
-    name: 'Master Wu',
-    image: '/client/assets/minifigures/master-wu.jpg',
+    id: 17,
+    name: 'Explorer',
+    image: 'assets/minifigures/explorer.png',
     collected: false,
-    collectionId: 17
+    collectionId: 1
+  },
+  {
+    id: 18,
+    name: 'Karate Master',
+    image: 'assets/minifigures/karate-master.png',
+    collected: false,
+    collectionId: 1
+  },
+  {
+    id: 19,
+    name: 'Lifeguard',
+    image: 'assets/minifigures/lifeguard.png',
+    collected: false,
+    collectionId: 1
   }
 ];
 

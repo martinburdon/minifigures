@@ -1,17 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Minifigure = ({ onClick, name, image, id, collected }) => (
-  <mini-fig
-    onClick={onClick}
-    style={{
-      textDecoration: collected ? 'line-through' : 'none'
-    }}
-  >
-    <p>{name}</p>
-    <img src={require('../assets/minifigures/master-wu.jpg')} />
-  </mini-fig>
-);
+const Minifigure = ({ onClick, name, image, id, collected }) => {
+  const style = {
+    opacity: collected ? 1 : 0.4
+  };
+
+  return(
+    <mini-fig
+      onClick={onClick}
+      style={style}
+    >
+      <p>{name}</p>
+      <img src={require(`../${image}`)} />
+    </mini-fig>
+  )
+};
 
 // Minifigure.propTypes = {
 //   onClick: PropTypes.func.isRequired,

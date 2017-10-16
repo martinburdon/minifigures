@@ -2,17 +2,24 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Minifigure from './Minifigure.js';
 
+const style = {
+  display: 'flex',
+  flexDirection: 'row'
+};
+
 const Collection = ({ minifigures, name, onMinifigClick }) => {
   return (
     <minifig-collection>
       <h2>{name}</h2>
-      {minifigures.map(minifig =>
-        <Minifigure
-          key={minifig.id}
-          {...minifig}
-          onClick={() => onMinifigClick(minifig.id)}
-        />
-      )}
+      <div style={style}>
+        {minifigures.map(minifig =>
+          <Minifigure
+            key={minifig.id}
+            {...minifig}
+            onClick={() => onMinifigClick(minifig.id)}
+          />
+        )}
+      </div>
     </minifig-collection>
   )
 };
